@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home-Demo</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .nav-flexer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            padding: 22px 109px;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 0px 13px;
+        }
+
+        ul {
+            margin: 30px 0px;
+        }
+
+        li a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            color: rgba(25, 25, 25, 0.698);
+        }
+
+        li:hover {
+            color: black;
+            background-image: url(color-bar.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: bottom;
+            transition: 0.4s;
+        }
+
+        .first-flexer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section-1 {
+            padding-bottom: 150px;
+            width: 75%;
+            margin: 5px auto;
+        }
+
+        .para {
+            box-sizing: border-box;
+            padding-top: 85px;
+            width: 45%;
+        }
+
+        .para h1 {
+            font-size: 60px;
+        }
+
+        .para h1 span {
+            background-image: url(bar-back.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .social-links a i {
+            padding: 5px 7px;
+            color: rgba(36, 35, 35, 0.504);
+        }
+
+        .social-links a i:hover {
+            position: relative;
+            color: rgb(237, 44, 76);
+            transition-duration: 1.2s;
+            bottom: 6px;
+        }
+
+        .btns-1 {
+            padding: 30px 10px;
+        }
+
+        .first-btn {
+            text-decoration: none;
+            background-color: rgb(238, 27, 62);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+        }
+
+        .first-btn:hover {
+            background-color: black;
+            transition: 0.6s;
+        }
+
+        .btns-1 a i {
+            position: relative;
+            top: 12px;
+            left: 35px;
+            color: gray;
+            border-radius: 40px;
+        }
+
+        .btns-1 a i:hover {
+            background-color: rgb(244, 9, 48);
+            color: white;
+            transition: 1.2s;
+        }
+
+        .dev h1 {
+            font-size: 200px;
+            opacity: 0.2;
+        }
+
+        .section-2 {
+            background-color: #ff3366;
+        }
+
+        .qualities {
+            display: flex;
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .quality {
+            padding: 70px 0px;
+        }
+
+        .para-1 {
+            width: 90%;
+            text-align: center;
+            margin: 10px auto;
+            font-size: x-large;
+            background-color: rgb(255, 255, 255);
+            padding: 70px 0px;
+        }
+
+        .para-1 span:hover {
+            border-bottom: 2px solid #ff3366;
+            transition: 0.8s;
+        }
+
+        .para-1 i {
+            color: #ff3366;
+        }
+        .section-3{
+            padding: 70px 0px;
+        }
+        .about{
+            width: 80%;
+            margin: 0px auto;
+        }
+        .about-head{
+            width: 50%;
+            text-align: center;
+            margin: 0px auto ;
+        }
+        .about p{
+            font-size: 20px;
+            opacity: 0.5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .about h1, h2{
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .about h2 span{
+           border-bottom: 4px solid rgb(255, 0, 85); 
+        }
+        .para2 h3{
+            color: rgb(255, 0, 85);
+        }
+        .points{
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            margin-top: 65px ;
+        }
+        .point{
+            width: 28%;
+            padding: 28px 0px ;
+            border: 1px solid rgba(75, 75, 75, 0.104);
+            margin: 0px 30px;
+        }
+        .point:hover{
+            background-color: #f51c52;
+            color: white;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: bottom;
+            transition: 0.4s;
+        }
+        .point-para{
+            width: 65%;
+            margin: 0px auto;
+        }
+        .point-header{
+            position: relative;
+            font-size: 25px;
+            left: 32px;
+        }
+        .point-header i{
+            position: relative;
+            right: 14px;
+        }
+        .point-para p{
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navgation">
+            <nav class="nav-flexer">
+                <a href="#" class="logo"><img src="black-logo.png" alt=""></a>
+                <ul class="nav-links">
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">skill</a></li>
+                    <li><a href="">portifolio</a></li>
+                    <li><a href="">testimonials</a></li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container-2">
+        <section class="section-1">
+            <div class="first-flexer">
+                <div class="para">
+                    <h1>I'm A Full Stack Web <span> Developer</span></h1>
+                    <div class="social-links">
+                        <a href=""> <i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href=""> <i class="fa-brands fa-codepen fa-2x"></i></a>
+                        <a href=""> <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href=""> <i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+                        <a href=""> <i class="fa-brands fa-gitlab fa-2x"></i></a>
+                    </div>
+                    <div class="btns-1">
+                        <a href="#" class="first-btn">Get started</a>
+                        <a href="#"><i class="fa-regular fa-circle-play fa-3x"></i></a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="developer.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="section-2">
+            <div class="qualities">
+                <div class="quality">
+                    <div class="para-1">
+                        <i class="fa-solid fa-bezier-curve fa-2x"></i>
+                        <h2><span>Stunning </span>Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+                <div class="quality">
+                    <div class="para-1">
+                        <i class="fa-solid fa-bezier-curve fa-2x"></i>
+                        <h2><span>Stunning </span>Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+                <div class="quality">
+                    <div class="para-1">
+                        <i class="fa-solid fa-bezier-curve fa-2x"></i>
+                        <h2><span>Stunning </span>Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="about">
+            <div class="about-head">
+                <h2>About <span>Me</span></h2>
+                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            </div>
+            <div class="about-flexer">
+                <div class="para2">
+                    <h1>Hello!</h1>
+                    <h3>I’m David Smith, a freelance Full Stack Web Developer.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="points">
+            <div class="point">
+                <div class="point-header">
+                    <i class="fa-solid fa-camera"></i> <strong>Photography</strong>
+                </div>
+                <div class="point-para">
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-header">
+                    <i class="fa-solid fa-mobile-button"></i> <strong>Mobile Development</strong>
+                </div>
+                <div class="point-para">
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-header">
+                    <i class="fa-solid fa-rocket"></i> <strong>Branding Identity</strong>
+                </div>
+                <div class="point-para">
+                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
